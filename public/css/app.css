@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: salmon;
+  text-align: center;
+}
+
+body header h1 {
+  color: white;
+}
+
+body #content {
+  margin: 20px 0;
+}
+
+body #content h1 {
+  color: lightblue;
+}
+
+body #content ul li {
+  color: purple;
+}
+
+body footer h1 {
+  color: white;
+}
+
