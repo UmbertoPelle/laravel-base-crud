@@ -10,6 +10,15 @@ class PagamentoController extends Controller{
   public function index(){
 
     $pagamenti = Pagamento::all();
+
     return view('pagamenti', compact('pagamenti'));
+  }
+
+  public function delete($id){
+
+    $pagamento = Pagamento::findOrFail($id);
+    $pagamento -> delete();
+
+    return redirect() -> route('pagamenti-index');
   }
 }

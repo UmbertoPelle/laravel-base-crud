@@ -10,3 +10,4 @@ Route::get('/',  function () {
 Route::get('/paganti', 'PaganteController@index') -> name('paganti-index');
 
 Route::get('/pagamenti', 'PagamentoController@index') -> name('pagamenti-index');
+Route::get('/pagamenti/delete/{id}', 'PagamentoController@delete') -> name('pagamento-delete');
