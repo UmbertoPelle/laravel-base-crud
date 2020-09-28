@@ -10,6 +10,6 @@ class PaganteController extends Controller{
   public function index(){
     $title = 'Paganti:';
     $paganti = Pagante::all();
-    return view('home', compact('paganti', 'title'));
+    return view('paganti', compact('paganti', 'title'));
   }
 }
